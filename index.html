@@ -3,11 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Semantic HTML</title>
+    <title>Basic Semantic Page</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="site-header">
+      <h1>My Website</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>This is a basic section describing who we are and what we do.</p>
+      </section>
+
+      <section id="services">
+        <h2>Services</h2>
+        <p>This section lists the services or products offered.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email us at <a href="mailto:hello@example.com">hello@example.com</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
   </body>
 </html>
